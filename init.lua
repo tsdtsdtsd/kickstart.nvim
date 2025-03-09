@@ -729,7 +729,7 @@ require('lazy').setup({
         --},
       }
 
-      vim.cmd.colorscheme 'onenord'
+      -- vim.cmd.colorscheme 'onenord'
     end,
   },
 
@@ -756,16 +756,16 @@ require('lazy').setup({
   },
 
   { -- You can easily change to a different colorscheme.
-    'shaunsingh/nord.nvim',
+    'EdenEast/nightfox.nvim',
     priority = 998, -- Make sure to load this before all the other start plugins.
     config = function()
       ---@diagnostic disable-next-line: missing-fields
-      require 'nord' --.setup {}
+      require 'nightfox' --.setup {}
 
       -- Load the colorscheme here.
       -- Like many other themes, this one has different styles, and you could load
       -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-      -- vim.cmd.colorscheme 'nord'
+      vim.cmd.colorscheme 'nordfox'
     end,
   },
 
